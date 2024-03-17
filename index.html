@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="title">CONTROLE DE PRODUÇÃO</div>
+        <div class="start">
+            <div id="timer">00:00</div>
+            <div class="btns">
+            <button class="btn" id="btn-start" type="button">START</button>
+            <button class="btn" id="btn-count" type="button">CONTAR</button>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="chart">
+
+            <div id="mychart"></div>
+          
+        </div>
+        <div class="control">
+            <input class="controle" id="controle-Peso" type="number" placeholder="Peso(g)">
+            <input class="controle" id="controle-Desperd" type="text" placeholder="Perda/Sobras">
+            
+        </div>
+    </main>
+   
+    <script type="module" src="/function.js"></script>
+    <script type="module" src="/index.js"></script>
+</body>
+
+</html>
+<!-- A relação média de produção é de 5s/un. <br>
+                Tendo um desperdicio de 20g, o equivalente<br>
+                a 5% da sua produção. -->
