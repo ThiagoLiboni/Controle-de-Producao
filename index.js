@@ -24,7 +24,14 @@ var options = {
         data: []
     }],
     xaxis: {
-        categories: []
+        categories: [],
+        title: {
+            text:"Produtos(und)",
+            style:{
+                fontSize: "18px"
+            }
+        }
+
     },
 
     yaxis: {
@@ -37,7 +44,14 @@ var options = {
                 }
                 return ''; // Retorna uma string vazia para ocultar rótulos de valores inteiros
             }
+        },
+        title:{
+            text: "Tempo(s)",
+            style: {
+                fontSize: "18px"
+            }
         }
+        
     },
     tooltip: {
         y: {
