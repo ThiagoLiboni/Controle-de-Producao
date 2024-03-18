@@ -90,6 +90,9 @@ function rendimento() {
     mediaTempo = t / un
 
     sobraPct = ((sobraValor * 100) / materiaValor).toFixed(2) + "%"
+    let time = fullTime;
+    let full_Time;
+    if(time<60){full_Time=time}else{full_Time=`${parseInt(time/60)}min : ${time%60}s`}
 
 
     const info = document.getElementById('info')
@@ -97,7 +100,7 @@ function rendimento() {
     info.innerHTML = `Produtos fabricados: <b>${un}und</b>.<br>
     Média de produção: <b>${parseInt(mediaTempo)}s/und</b>.<br>
     Desperdício: <b>${sobraValor}g</b>(<b>${sobraPct})</b><br><br>
-    O tempo total do processo foi de <b>${fullTime}s.</b>`
+    O tempo total do processo foi de <b>${full_Time}.</b>`
     Progress()
     count = 1;
 }

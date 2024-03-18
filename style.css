@@ -58,14 +58,17 @@ header{
     display:flex;
     flex-direction: column;
     height: 100%;
-    margin-top:3%
+    margin-top:3%;
+    width: 20%;
+    max-width: 240px;
 }
 .btns{
     height: 80%;
     align-content: first baseline;
+    display: flex;
 }
 .btn{
-    width: 80px;
+    width: 80%;
     height: 100%;
     border-radius: 50%;
     border: 2px solid rgba(0, 0, 0, 0.404);
