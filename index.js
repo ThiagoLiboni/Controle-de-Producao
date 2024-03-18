@@ -106,7 +106,7 @@ function rendimento() {
     sobraPct = ((sobraValor * 100) / materiaValor).toFixed(2) + "%"
     let time = fullTime;
     let full_Time;
-    if(time<60){full_Time=time}else{full_Time=`${parseInt(time/60)}min : ${time%60}s`}
+    if(time<60){full_Time=time+"s"}else{full_Time=`${parseInt(time/60)}min : ${time%60}s`}
 
 
     const info = document.getElementById('info')
